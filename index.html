@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PURAI</title>
+<link rel="icon" href="assets/purai_logo.svg?v=2" type="image/svg+xml">
+<link rel="stylesheet" href="css/style.css">
+<!-- jsPDF — для экспорта графика динамики в PDF -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="tb-left">
+    <button class="spark-btn" id="sparkBtn" title="Профиль">✦</button>
+  </div>
+  <div class="tb-center">
+    <img class="logo" src="assets/purai.svg" alt="purai">
+  </div>
+  <div class="tb-right">
+    <div class="lang" id="langToggle">
+      <button data-l="ru">RU</button>
+      <button data-l="pl">PL</button>
+    </div>
+    <button class="btn btn-primary" id="addBtn"><span id="addLabel"></span></button>
+  </div>
+</header>
+
+<div class="reminder" id="reminder" style="display:none"></div>
+
+<main>
+  <div class="filters" id="filtersBar"></div>
+  <div class="sec-head"><h2 id="secTitle"></h2><span class="count" id="prodCount"></span></div>
+  <div class="grid" id="grid"></div>
+</main>
+
+<footer id="footer"></footer>
+
+<div class="overlay" id="overlay"><div class="modal" id="modal"></div></div>
+<div class="toast" id="toast"></div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
